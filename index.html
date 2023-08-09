@@ -1,14 +1,15 @@
 <!DOCTYPE HTML>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="description" content="my wife">
     <meta name="author" content="nhan">
-    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <title>nguyen nhan</title>
     <style>
     #my_wife {
         background-color: #1849;
-        padding: 80px;
+        padding: 100px;
         text-align: center;
         margin: 0px;
     }
@@ -33,20 +34,30 @@
     .menu-right{
         float: right;
     }
-    #flex-left {
-    flex: 30%;
-    background-color: #f1f1f1;
-    padding: 15px 10px;
-    margin: 0px;
+    #.left-side {
+        
+         flex: 30%;
+         background-color: #f1f1f1;
+         padding: 15px 10px;
 }
-    #flex-right {
-    flex: 70%;
-    padding: 10px;
+    #right-side {
+         flex: 70%;
+         padding: 10px 14px;
 }
     #flex-container {
-    display: flex;
-    flex-wrap: nowrap;
+         display: flex;
+         flex-wrap:  wrap;
 }
+    footer {
+        background: black;
+        text-align: center;
+        color: white;
+    }
+    footer > a{
+        color: white;
+        text-decoration: none;
+    }
+
     
     table{
     border-collapse: collapse;
@@ -82,15 +93,14 @@ table th {
         display: flex;
         flex-wrap: wrap;
     }
-    footer {
-        background: black;
-        text-align: center;
-        color: white;
-    }
-    footer > a{
-        color: white;
-        text-decoration: none;
-    }
+    .wife_title {
+    font-size: 15px;
+    padding: 10px 5px 10px 5px;
+    font-weight: bold;
+}
+.wife_desc {
+    margin: 0px 10px 5px 10px;
+}
 @media(max-width: 400px) {
     .menu-left {
         flex: 100%;
@@ -98,25 +108,14 @@ table th {
     .menu-right {
         flex: 100%;
     }
-     
-     .wife_item {
-        flex: 50%;
-    }
-    #wife_container {
+    #flex_container {
         flex-wrap: wrap;
     }
+     .wife_item {
+        flex: 50%;
 }
-.wife_title {
-    font-size: 15px;
-    padding: 10px 5px 10px 5px;
-    font-weight: bold;
-    
 }
-.wife_desc {
-    margin: 0px 10px 5px 10px;
-}
-    
-        
+
     </style>
 </head>
 <body>
@@ -129,7 +128,7 @@ table th {
     
     </nav>
     <div id="flex-container">
-        <div id="flex-left">
+        <div class="left-side">
             <img src="ai.jpg" alt="my photo"
                   width="100" height="100">
             <h1>Your name me</h1>
@@ -144,6 +143,8 @@ table th {
                <li>Ai</li>
                <li>Mie</li>
                </ol>
+        </div>
+        <div class="right-side">
                <h2 id="schdule">Schdule</h2>
                <table>
                   <tr>
@@ -164,11 +165,8 @@ table th {
                     <td>math</td>
                   </tr>
                   </table>
-        </div>
-    <div id="flex-right">
-    <h2 id="Contact">Contact Information</h2>
-    <p>facebook me<a href="https://facebook.com/nguyenthanhnhan">Nguyễn Thành Nhân</a></p>
-    <h2 id="Wife">Wife My</h2>
+        <h2 id="Contact">Contact Information</h2>
+    <p>facebook me<a href="https://facebook.com/nguyenthanhnhan">nguyen thanh nhan</a></p>
     <div id="wife_container">
         <div class="wife_item">
             <img class="wife_img" src="nhiii.jpg">
@@ -200,12 +198,11 @@ table th {
             <div class="wife_title">Nhi</div>
             <div class="wife_desc">ngyem thanh nguyen tjuabbd nguuens jruwbbdjj jeiuw niwuhw jeuwu uuwbuuw ubwuhw u uw</div>
           </div>
-          </div>
-        </div>
-      </div>
+         </div>
+       </div>
     </div>
     <footer>
         created by <a href="mailto:nhanyader@gmail.com">send me</a>
     </footer>
 </body>
-<html>
+            </html>
